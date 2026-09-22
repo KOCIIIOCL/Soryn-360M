@@ -11,6 +11,9 @@ SmolLM2-360M-Instruct, дообученная под вызов инструме
 - Формат: GGUF, квантование Q8_0
 - Файл: `soryn-360m-q8_0.gguf` (368 МБ)
 
+Скачать веса можно из [Releases](https://github.com/KOCIIIOCL/Soryn-360M/releases/tag/v1.0).
+В самом репозитории лежат только README и Modelfile, веса отдельным файлом.
+
 Полный файн-тюнинг, не LoRA. Обучалась на 4 ГБ VRAM через bf16 + 8-bit AdamW
 и gradient checkpointing, так что для самой модели железо нужно скромное.
 
