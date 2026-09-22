@@ -1,4 +1,4 @@
-# Soryn-360M
+# Soryn-360M (Soric-360M)
 
 English | [Русский](README.md)
 
@@ -46,7 +46,7 @@ for both, temperature 0.
 
 ### Tool calling (canonical system prompt, 5 prompts)
 
-| Metric | SmolLM2-360M-Instruct | Soryn-360M |
+| Metric | SmolLM2-360M-Instruct | Soryn-360M (Soric-360M) |
 |---|---|---|
 | Valid JSON | 4/5 (80%) | **5/5 (100%)** |
 | Correct function name | 3/5 (60%) | **5/5 (100%)** |
@@ -55,12 +55,12 @@ for both, temperature 0.
 The base model often has no idea what you want from it. Sometimes it copies the
 function description from the system prompt instead of calling it, sometimes it
 just parrots the placeholder `{"name": "function_name", "arguments": {"arg": "value"}}`
-from the example. Soryn-360M calls the right tool with the right arguments on
+from the example. Soryn-360M (Soric-360M) calls the right tool with the right arguments on
 the first try.
 
 ### Arithmetic (12 prompts)
 
-| Metric | SmolLM2-360M-Instruct | Soryn-360M |
+| Metric | SmolLM2-360M-Instruct | Soryn-360M (Soric-360M) |
 |---|---|---|
 | Correct answers | 8/12 (67%) | 8/12 (67%) |
 
@@ -70,13 +70,13 @@ simply is not enough to keep multi-digit operations in working memory.
 
 ### Arithmetic in Russian (5 prompts)
 
-| Metric | SmolLM2-360M-Instruct | Soryn-360M |
+| Metric | SmolLM2-360M-Instruct | Soryn-360M (Soric-360M) |
 |---|---|---|
 | Correct answers | 2/5 (40%) | **4/5 (80%)** |
 
 The base model does not even answer the question in Russian. It echoes it back
 and goes off rambling about "why 25 times 4 does not work like that".
-Soryn-360M reads the task and solves it.
+Soryn-360M (Soric-360M) reads the task and solves it.
 
 ### Russian chat
 
